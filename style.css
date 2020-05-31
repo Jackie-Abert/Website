@@ -51,6 +51,7 @@ ul li {
 /* HEADER SECTION */
 header {
   height: 165px;
+  overflow: hidden;
 }
 header h1 {
   font-size: 60px;
