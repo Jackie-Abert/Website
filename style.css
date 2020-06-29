@@ -5,9 +5,10 @@ html, body {
 }
 /* I used minimum height for each section so there would be a more uniform look to the entire page. The contact section was a bit too short and did not look good in comparison to the other sections. */
 .wrapper {
-  max-width:580px;
+  max-width:620px;
   min-height: 400px;
   margin:auto;
+  padding-bottom: 10px;
 }
 .center {
   text-align: center;
@@ -41,11 +42,9 @@ p, li {
 p {
   font-size:17px; 
   text-align:justify;
-  padding:10px;
+
 }
-ul li {
-  font-size:15px;
-}
+
 
 /*----------------------------------------------------------*/
 /* HEADER SECTION */
@@ -105,10 +104,6 @@ main h2 {
   padding-top: 20px;
 }
 /* Lists in main section. */
-ul {
-  margin: 0% 15% 0% 15%;
-  text-align: justify;
-}
 ul li {
   font-weight: 550;
 }
@@ -152,6 +147,23 @@ footer h3 {
   bottom: 0;
   width: 100%;
 }
+
+
+.group {
+  display: flex;
+}
+.item {
+  margin: 10px;
+  flex: 1;
+}
+
+.square {
+  background-color: #525252;
+  height: 200px;
+  min-width: 200px;
+  padding: 10px;
+}
+
 
 /* CSS for image and paragraph next to each other in columns. Needed this because section after ABOUT ME was not ligning up properly and it just looked a mess. */
 /* This is no longer needed but I am keeping the code here just incase I change my mind about the layout. */
