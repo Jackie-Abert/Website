@@ -6,7 +6,6 @@ html, body {
 /* I used minimum height for each section so there would be a more uniform look to the entire page. The contact section was a bit too short and did not look good in comparison to the other sections. */
 .wrapper {
   max-width:620px;
-  min-height: 400px;
   margin:auto;
   padding-bottom: 10px;
 }
