@@ -3,24 +3,23 @@ html, body {
   margin:0;
   padding:0;
 }
-/* I used minimum height for each section so there would be a more uniform look to the entire page. The contact section was a bit too short and did not look good in comparison to the other sections. */
 .wrapper {
-  max-width:620px;
+  max-width:800px;
   margin:auto;
   padding-bottom: 10px;
 }
+.minsize {
+  min-height: 500px;
+  padding-top: 40px;
+}
+.altcolor {
+  background-color: #e9e9e9;
+}
+
 .center {
   text-align: center;
 }
-/* Because of the fixed links at the top of the page, the sections they linked to ended up being too high and were covered. This gives the links hidden padding so they lign up correctly. */
-#intro {
-  padding:50px 0 0;
-  margin:-25px 0 0;
-}
-#about, #contact {
-  padding: 50px 0 0; 
-  margin: -50px 0 0;
-}
+
 header ul, footer h3 {
   background-color: #353535;
 }
@@ -28,6 +27,7 @@ header {
   background-color:#b9b9b9;
   color: #000000;
 }
+
 /*----------------------------------------------------------*/
 /* FONTS FOR PAGE */
 h1, h2, h3 {
@@ -43,84 +43,156 @@ p {
   text-align:justify;
 
 }
-
+header a:visited { color: #e6e6e6; }
 
 /*----------------------------------------------------------*/
 /* HEADER SECTION */
-header {
-  height: 165px;
-  overflow: hidden;
-}
+/*this section is what this page looks like on a phone, tablet, anything smaller than a desk top*/
 header h1 {
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 700;
-  letter-spacing: 15px;
+  letter-spacing: 6px;
   padding-top: 45px;
   margin:0;
 }
 header h2 { 
   font-size: 20px;
-  letter-spacing: 2px;
-  padding-bottom:15px;
+  letter-spacing: 1px;
+  padding-bottom:8px;
   margin-bottom: 0px;
   margin-top: 10px;
-  
 }
-/* This is the navigation list that is fixed to the top of the page. */
-header ul {
-  font-family: Georgia, serif;
-  text-align: center;
-  font-variant: small-caps;
-  padding: 5px;
-  margin: 0px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-/* header nav links */
-header ul li {
-  font-family: Georgia, serif;
-  list-style-type: none;
-  text-align: center;
-  display: inline-block;
-  letter-spacing: 5px;
-  margin:0;
-  padding: 5px 20px 5px 20px;
-}
-header a {
-  text-decoration: none;
-}
-header a:link { color: #e6e6e6; }
-header a:visited { color: #e6e6e6; }
-header a:hover { color: #757de7; }
-header a:active { color: #00f7ff; }
+ header nav {
+    display: flex;
+    justify-content: center;
+  }
 
+  header ul {
+    font-family: Georgia, serif;
+    text-align: center;
+    font-variant: small-caps;
+    padding: 5px;
+    margin: 0px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  /* header nav links */
+  header nav ul li {
+    font-family: Georgia, serif;
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+    padding: 5px 10px 5px 10px;
+  }
+  header nav ul li a {
+    text-decoration: none;
+  }
+  header nav ul {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    justify-content: center;
+  }
+  .img-style {
+    max-width: 200px;
+    display: block;
+    justify-content: center;
+    border-radius: 2%;
+    box-shadow: 2px 2px 5px #000000;
+  }
+  .img-style2 {
+    max-width: 500px;
+    display: block;
+    border-radius: 2%;
+    box-shadow: 2px 2px 5px #000000;
+  }
+
+  header {
+    height: 155px;
+  }  
+/*-----this section is what the page looks like on a regular computer-----*/
+@media all and (min-width: 700px) {
+  header {
+    height: 180px;
+  }  
+  header h1 {
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 10px;
+    padding-top: 45px;
+    margin:0;
+  }
+  header h2 { 
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+  }
+  /* Images */
+.img-style {
+  max-width: 350px;
+  display: block;
+  border-radius: 2%;
+  box-shadow: 2px 2px 5px #000000;
+}
+.img-style2 {
+  max-width: 800px;
+  display: block;
+  border-radius: 2%;
+  box-shadow: 2px 2px 5px #000000;
+}
+  /* This is the navigation list that is fixed to the top of the page. */
+  
+  header ul {
+    font-family: Georgia, serif;
+    text-align: center;
+    font-variant: small-caps;
+    padding: 5px;
+    margin: 0px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  /* header nav links */
+  header nav ul li {
+    font-family: Georgia, serif;
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+    letter-spacing: 5px;
+    padding: 5px 20px 5px 20px;
+  }
+  header nav ul li a {
+    text-decoration: none;
+  }
+  header a:link { color: #e6e6e6; }
+  header a:visited { color: #e6e6e6; }
+  header a:hover { color: #757de7; }
+  header a:active { color: #00f7ff; }
+}
 /*----------------------------------------------------------*/
+
+
+
 /* MAIN SECTION */
 main h2 {
   font-size:25px;
   margin:0;
-  padding-top: 20px;
 }
 /* Lists in main section. */
+
 ul li {
   font-weight: 550;
+  padding: 2px;
 }
 /* This is the list in the contact div. */
 ol {
   padding:0px;
   margin:0px;
-  text-align:center;
   list-style-position:inside;
 }
-/* Image located in about me div */
-.img-style {
-  width: 300px;
-  display: block;
-  margin: auto;
-  border-radius: 2%;
-  box-shadow: 2px 2px 5px #000000;
-}
+
 /* Main links in contact me div. */
 main a {
   text-decoration: none;
@@ -129,13 +201,9 @@ main a:link { color: #1900ff; }
 main a:visited { color: #010052; }
 main a:hover { color: #757de7; }
 main a:active { color: #00f7ff; }
-main a:hover {
-	text-decoration: underline overline;	
-}
 
 /*----------------------------------------------------------*/
 /* FOOTER SECTION */
-/* Footer is fixed at the bottom of the browser page, regardless of where user is in page. */
 footer h3 {
   color: #e6e6e6;
   font-size:15px;
@@ -156,28 +224,16 @@ footer h3 {
   flex: 1;
 }
 
-.square {
-  background-color: #525252;
-  height: 200px;
-  min-width: 200px;
-  padding: 10px;
+form {
+  display: block;
 }
-
-
-/* CSS for image and paragraph next to each other in columns. Needed this because section after ABOUT ME was not ligning up properly and it just looked a mess. */
-/* This is no longer needed but I am keeping the code here just incase I change my mind about the layout. */
-/*
-.column-left {
-  float: left;
-  width: 40%;
+form label {
+  text-align: center;
 }
-.column-right {
-  float: right;
-  width: 60%;
+form input,
+form textarea {
+  width: 100%;
 }
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+form textarea {
+  height: 180px;
 }
-*/
