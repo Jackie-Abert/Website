@@ -2,6 +2,11 @@ html, body {
   background-color: #f2f2f2;
   margin:0;
   padding:0;
+  width: 100%;
+}
+div {
+  margin:0;
+  padding:0;
 }
 .wrapper {
   max-width:800px;
@@ -43,6 +48,7 @@ p {
   text-align:justify;
 
 }
+header a:link { color: #e6e6e6; }
 header a:visited { color: #e6e6e6; }
 
 /*----------------------------------------------------------*/
