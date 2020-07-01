@@ -4,58 +4,12 @@ html, body {
   padding:0;
   width: 100%;
 }
-div {
-  margin:0;
-  padding:0;
-  width: 100%;
-}
-.wrapper {
-  max-width:800px;
-  margin:auto;
-  padding-bottom: 10px;
-}
-.minsize {
-  min-height: 500px;
-  padding-top: 40px;
-}
-.altcolor {
-  background-color: #e9e9e9;
-  width: 100%;
-
-}
-
-.center {
-  text-align: center;
-}
-
-header ul, footer h3 {
-  background-color: #353535;
-}
-header {  
+header { 
   background-color:#b9b9b9;
   color: #000000;
+  margin:0;
+  padding:0;
 }
-
-/*----------------------------------------------------------*/
-/* FONTS FOR PAGE */
-h1, h2, h3 {
-  font-family: Georgia, serif;
-  text-align: center;
-  font-variant: small-caps;
-}
-p, li {
-  font-family: Arial, Helvetica, sans-serif;
-}
-p {
-  font-size:17px; 
-  text-align:justify;
-
-}
-header a:hover { color: #e6e6e6; }
-
-/*----------------------------------------------------------*/
-/* HEADER SECTION */
-/*this section is what this page looks like on a phone, tablet, anything smaller than a desk top*/
 header h1 {
   font-size: 40px;
   font-weight: 700;
@@ -70,160 +24,159 @@ header h2 {
   margin-bottom: 0px;
   margin-top: 10px;
 }
- header nav {
-    display: flex;
-    justify-content: center;
-  }
+header nav {
+  display: flex;
+  justify-content: center;
+}
+header ul {
+  text-align: center;
+  font-variant: small-caps;
+  padding: 5px;
+  margin: 0px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+    
+header nav ul li {
+  font-family: Georgia, serif;
+  list-style-type: none;
+  text-align: center;
+  display: flex;
+  letter-spacing: 1px;
+  padding: 5px 10px 5px 10px;
+}
+    
+header nav ul li a {
+  text-decoration: none;
+  color: #e6e6e6;
+}
+    
+header a:link { color: #e6e6e6; }
+    
+header a:visited { color: #e6e6e6; }
+    
+header a:hover { color: #757de7; }
+    
+header a:active { color: #00f7ff; }
+    
+header nav ul {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  justify-content: center;
+}
 
-  header ul {
-    font-family: Georgia, serif;
-    text-align: center;
-    font-variant: small-caps;
-    padding: 5px;
-    margin: 0px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  /* header nav links */
-  
-  header nav ul li {
-    font-family: Georgia, serif;
-    list-style-type: none;
-    text-align: center;
-    display: flex;
-    padding: 5px 10px 5px 10px;
-  }
-  
-  header nav ul li a {
-    text-decoration: none;
-    color: #e6e6e6;
-  }
-  
-  header a:link { color: #e6e6e6; }
-  
-  header a:visited { color: #e6e6e6; }
-  
-  header a:hover { color: #757de7; }
-  
-  header a:active { color: #00f7ff; }
-  
-  header nav ul {
-    display: flex;
-    padding-left: 0;
-    list-style: none;
-    justify-content: center;
-  }
-  .img-style {
-    max-width: 200px;
-    display: block;
-    justify-content: center;
-    border-radius: 2%;
-    box-shadow: 2px 2px 5px #000000;
-  }
-  .img-style2 {
-    max-width: 500px;
-    display: block;
-    border-radius: 2%;
-    box-shadow: 2px 2px 5px #000000;
-  }
+header ul, footer h3 {
+  background-color: #353535;
+}
 
-  header {
-    height: 155px;
-  }  
-/*-----this section is what the page looks like on a regular computer-----*/
+.wrapper {
+  max-width:800px;
+  margin:auto;
+  padding-bottom: 10px;
+}
+
+.altcolor {
+  background-color: #e9e9e9;
+  width: 100%;
+}
+
+.minsize {
+  min-height: 500px;
+  padding-top: 40px;
+}
+
+.group {
+  display: flex;
+}
+
+.item {
+  margin: 10px;
+  flex: 1;
+}
+
+h1, h2, h3 {
+  font-family: Georgia, serif;
+  text-align: center;
+  font-variant: small-caps;
+}
+
+p, li {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-size:17px; 
+  text-align:justify;
+
+}
+
+.img-style, .img-style2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  border-radius: 2%;
+  box-shadow: 2px 2px 5px #000000;
+}
+
+header {
+  height: 155px;
+}  
+
+
+
 @media all and (min-width: 700px) {
   header {
     height: 180px;
   }  
   header h1 {
     font-size: 60px;
-    font-weight: 700;
     letter-spacing: 10px;
-    padding-top: 45px;
-    margin:0;
   }
   header h2 { 
-    font-size: 20px;
     letter-spacing: 2px;
-    margin-bottom: 0px;
-    margin-top: 10px;
   }
-  /* Images */
-.img-style {
-  max-width: 350px;
-  display: block;
-  border-radius: 2%;
-  box-shadow: 2px 2px 5px #000000;
-}
-.img-style2 {
-  max-width: 800px;
-  display: block;
-  border-radius: 2%;
-  box-shadow: 2px 2px 5px #000000;
-}
-  /* This is the navigation list that is fixed to the top of the page. */
+  .img-style {
+    max-width: 350px;
+  }
+  .img-style2 {
+    max-width: 800px;
+  }
   
-  header ul {
-    font-family: Georgia, serif;
-    text-align: center;
-    font-variant: small-caps;
-    padding: 5px;
-    margin: 0px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  /* header nav links */
   header nav ul li {
-    font-family: Georgia, serif;
-    list-style-type: none;
-    text-align: center;
-    display: flex;
     letter-spacing: 5px;
     padding: 5px 20px 5px 20px;
   }
-  header nav ul li a {
-    text-decoration: none;
-  }
-  header a:link { color: #e6e6e6; }
-  header a:visited { color: #e6e6e6; }
-  header a:hover { color: #757de7; }
-  header a:active { color: #00f7ff; }
 }
 /*----------------------------------------------------------*/
 
-
-
-/* MAIN SECTION */
 main h2 {
   font-size:25px;
   margin:0;
 }
-/* Lists in main section. */
 
 ul li {
   font-weight: 550;
   padding: 2px;
 }
-/* This is the list in the contact div. */
+
 ol {
   padding:0px;
   margin:0px;
   list-style-position:inside;
 }
 
-/* Main links in contact me div. */
 main a {
   text-decoration: none;
 }
+
 main a:link { color: #1900ff; }
 main a:visited { color: #010052; }
 main a:hover { color: #757de7; }
 main a:active { color: #00f7ff; }
 
-/*----------------------------------------------------------*/
-/* FOOTER SECTION */
 footer h3 {
   color: #e6e6e6;
   font-size:15px;
@@ -235,15 +188,7 @@ footer h3 {
   width: 100%;
 }
 
-
-.group {
-  display: flex;
-}
-.item {
-  margin: 10px;
-  flex: 1;
-}
-
+/*--email form--*/
 form {
   display: block;
 }
